@@ -1,8 +1,7 @@
-import "./App.css";
-import useDelayedValue from "./hook/useDelayedValue";
-import usePointerPosition from "./hook/usePointerPosition";
+import useDelayedValue from "./hooks/useDelayedValue";
+import usePointerPosition from "./hooks/usePointerPosition";
 
-export default function App() {
+function DotsWrapper() {
   const pos1 = usePointerPosition();
   const pos2 = useDelayedValue(pos1, 100);
   const pos3 = useDelayedValue(pos2, 200);
